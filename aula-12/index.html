@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- metadata -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webpage containing a table">
+    <title>Aula 11</title>
+    <link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
+</head>
+<!-- content below -->
+
+<body>
+    <h1>Tabelas</h1>
+    <hr>
+    <!-- Primeira tabela -->
+    <h2>1. Tabela semântica</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camisa</td>
+                <td>R$39,90</td>
+            </tr>
+            <tr>
+                <td>Calça Jeans</td>
+                <td>R$89.90</td>
+            </tr>
+            <tr>
+                <td>Tênis</td>
+                <td>R$129,99</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <!-- Segunda tabela -->
+    <h2>2. Tabela com colspan em &lt;th&gt;</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th colspan="2">Disponibilidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camisa</td>
+                <td>R$39,90</td>
+                <td>Disponível</td>
+                <td>Entregue em 24h</td>
+            </tr>
+            <tr>
+                <td>Calça Jeans</td>
+                <td>R$89.90</td>
+                <td>Indisponível</td>
+                <td style="text-align: center;">-</td>
+            </tr>
+            <tr>
+                <td>Tênis</td>
+                <td>R$129,99</td>
+                <td>Disponível</td>
+                <td>Entregue em 24h</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <!-- Terceira tabela -->
+    <h2>3. Tabela com colspan em &lt;th&gt; e em &lt;td&gt;</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th colspan="3">Disponibilidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camisa</td>
+                <td>R$39,90</td>
+                <td colspan="2" rowspan="2">Disponível</td>
+                <td colspan="2" rowspan="2">Entregue em 24h</td>
+            </tr>
+            <tr>
+                <td>Tênis</td>
+                <td>R$129,99</td>
+                <!-- <td>Disponível</td> -->
+                <!-- <td>Entregue em 24h</td> -->
+            </tr>
+            <tr>
+                <td>Calça Jeans</td>
+                <td>R$89.90</td>
+                <td colspan="2">Indisponível</td>
+                <td style="text-align: center;">-</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <!-- Quarta tabela -->
+    <h2>4. Tabela com colspan em &lt;th&gt; e em &lt;td&gt;</h2>
+    <p>Uma nova linha de dados foi adicionada para incluir o total e o valor total.</p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th colspan="3">Disponibilidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camisa</td>
+                <td>R$39,90</td>
+                <td colspan="2" rowspan="2">Disponível</td>
+                <td colspan="2" rowspan="2">Entregue em 24h</td>
+            </tr>
+            <tr>
+                <td>Tênis</td>
+                <td>R$129,99</td>
+                <!-- <td>Disponível</td> -->
+                <!-- <td>Entregue em 24h</td> -->
+            </tr>
+            <tr>
+                <td>Calça Jeans</td>
+                <td>R$89.90</td>
+                <td colspan="2">Indisponível</td>
+                <td style="text-align: center;">-</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td colspan="4" style="text-align: center;">R$529,90</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <!-- Tabela adicional -->
+    <h2>Tabela adicional somente em &lt;td&gt;</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th colspan="2">Disponibilidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camisa</td>
+                <td>R$39,90</td>
+                <td>Disponível</td>
+                <td>Entregue em 24h</td>
+            </tr>
+            <tr>
+                <td>Calça Jeans</td>
+                <td>R$89.90</td>
+                <td colspan="2" style="text-align: center;">Indisponível</td>
+                <!-- <td>-</td> -->
+            </tr>
+            <tr>
+                <td>Tênis</td>
+                <td>R$129,99</td>
+                <td>Disponível</td>
+                <td>Entregue em 9 dias</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h1>Desafio das tabelas</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <td colspan="3">Brasil</td>
+            </tr>
+            <tr>
+                <td>Estado</td>
+                <td>Time</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">São Paulo</td>
+                <td>Corinthians</td>
+            </tr>
+            <!--  -->
+            <tr>
+                <td rowspan="4">Rio de Janeiro</td>
+                <td>Corinthians</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
