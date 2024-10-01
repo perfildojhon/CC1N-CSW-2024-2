@@ -1,0 +1,64 @@
+body
+{
+    background: #dbdbdb;
+    font-family: "Segoe UI", Verdana, Geneva, Tahoma, sans-serif;
+}
+main
+{
+    padding: 12px;
+}
+
+header h1 
+{
+    font-size: 34px;
+    padding: 8px;
+}
+
+main ul 
+{
+    display: inline-flex;
+}
+
+main ul li 
+{
+    /* font-weight: bold; */
+    background-color: #f8f8f8;
+    margin: 4px 2px 0 2px;
+    padding: 4px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    user-select: none;
+}
+
+main ul li:hover, main ul li:focus
+{
+    background-color: #ebebeb;
+    /* color: #fcfcfc; */
+    border: 1px solid #111;
+} 
+
+main ul li:active
+{
+    background-color: #dbdbdb;
+}
+
+li a
+{
+    text-decoration: none;
+}
+
+li a:visited
+{
+    color: #333;
+}
+
+li a:active
+{
+    color: #ff0000;
+}
+
+h2
+{
+    padding: 8px;
+    font-weight: bolder;
+}
